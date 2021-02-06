@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "indent": ["warn", 2, { "ignoredNodes": ["TemplateLiteral > *"], "SwitchCase": 1 }],
+    "linebreak-style": ["warn", "unix"],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "always"],
+    "no-console": 1,
+    "no-alert": 1,
+    "eqeqeq": 1,
+    "strict": [0, "global"],
+    "no-undef": 1,
+    "no-unused-vars": [
+      1,
+      {
+        "varsIgnorePattern": "h"
+      }
+    ],
+    "prefer-const": "warn",
+    "react/prop-types": "warn",
+    "react/react-in-jsx-scope": 0,
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 2,
+        "maxBOF": 1
+      }
+    ],
+    "no-param-reassign": "warn"
+  },
+  "ignorePatterns": "serviceWorkerRegistration.ts"
+}
