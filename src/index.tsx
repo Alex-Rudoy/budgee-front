@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import './styles/normalize.css';
+import './styles/tailwind.css';
 
 ReactDOM.render(
   <React.StrictMode>
